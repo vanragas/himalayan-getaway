@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="sass/main.scss" />
@@ -17,28 +17,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="navigation">
-        <img src="./public/logo.png" alt="Logo" class="header__logo" />
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Popular Spots</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Packages</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navigation">
+        <img src="./public/logo.png" alt="Logo" class="navigation__logo" />
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Popular Spots</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Packages</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navigation__socials">
+          <div class="navigation__socials--icon">
+            <svg>
+              <use href="./public//icons.svg#icon-whatsapp"></use>
+            </svg>
+          </div>
+          <div class="navigation__socials--icon">
+            <svg>
+              <use href="./public//icons.svg#icon-telephone"></use>
+            </svg>
+          </div>
+          <div class="navigation__socials--icon">
+            <svg>
+              <use href="./public//icons.svg#icon-telegram"></use>
+            </svg>
+          </div>
+        </div>
+      </nav>
     </header>
   </body>
 </html>
